@@ -9,6 +9,9 @@ button.addEventListener('click', (e) => {
 
   function isPrime(number) {
     let arr = [];
+    if(number == 1){
+         message.innerHTML = `${number} is a prime number`;
+    }
     for (let i = 1; i <= number; i++) {
       if ((number%i) == 0) {
           arr.push(i);
